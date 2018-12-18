@@ -1,0 +1,149 @@
+/* line 5, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 14, ../scss/login.scss */
+#login {
+  padding: 50px 0;
+  width: 100%;
+  height: 100%;
+  background: RGBA(239, 233, 231, 1);
+  text-align: center;
+}
+/* line 20, ../scss/login.scss */
+#login div {
+  background: RGBA(239, 233, 231, 1);
+  margin: 0 auto;
+  width: 55%;
+  height: 60%;
+}
+/* line 23, ../scss/login.scss */
+#login div p {
+  margin-top: 5px;
+  color: RGBA(61, 17, 1, 1);
+}
+/* line 27, ../scss/login.scss */
+#login div span {
+  text-align: center;
+  margin: 30px auto;
+  display: block;
+  border-top: solid 4px RGBA(255, 94, 69, 1);
+  border-right: solid 1px RGBA(203, 198, 196, 1);
+  border-bottom: solid 1px RGBA(203, 198, 196, 1);
+  box-shadow: 4px 4px 4px RGBA(221, 221, 221, 1);
+  width: 70%;
+  height: 100%;
+}
+/* line 38, ../scss/login.scss */
+#login div span #login_word {
+  text-align: center;
+  font-size: 24px;
+}
+/* line 42, ../scss/login.scss */
+#login div span p {
+  text-align: left;
+  margin-bottom: 10px;
+  margin: 10px;
+}
+/* line 47, ../scss/login.scss */
+#login div span input[type="text"] {
+  margin: 10px;
+  display: block;
+  width: 90%;
+  height: 25px;
+  border: 1px solid RGBA(206, 206, 206, 1);
+  border-radius: 5px;
+}
+/* line 55, ../scss/login.scss */
+#login div span input[type="submit"] {
+  width: 40%;
+  height: 35px;
+  cursor: pointer;
+  margin: 20px 0 20px 10px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+/* line 63, ../scss/login.scss */
+#login div span input[type="submit"]:hover {
+  transition: background-color 1s;
+  transition: color 1s;
+  background-color: RGBA(239, 233, 231, 1);
+  color: RGBA(245, 108, 35, 1);
+}
+/* line 70, ../scss/login.scss */
+#login div span .orange {
+  background-color: RGBA(245, 108, 35, 1);
+}
+/* line 73, ../scss/login.scss */
+#login div span .gray {
+  background-color: RGBA(160, 158, 158, 1);
+}
+
+@media (max-width: 749px) {
+  /* line 85, ../scss/login.scss */
+  #login div span {
+    width: 90%;
+  }
+}

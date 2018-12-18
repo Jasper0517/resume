@@ -1,0 +1,74 @@
+$color_black: #444
+$color_yellow: #FFC954
+$color_red: #FF3D4A
+$color_white: #f3f3f3
+*
+  // border: 1px solid black
+  font-family: 'Roboto Condensed', sans-serif , "微軟正黑體"
+  font-weight: bold
+  position: relative
+body,html
+  width: 100%
+  height: 100%
+  display: flex
+  justify-content: center
+  align-items: center
+  margin: 0
+  background-color: $color_yellow
+#buy_list
+  padding: 20px
+  background-color: $color_white
+  border: 4px solid $color_black
+h1
+  padding: 10px 20px
+  margin-top: -20px
+  margin-left: -20px
+  margin-right: -20px
+  background-color: $color_red
+  color: white
+  border-bottom: 4px solid $color_black
+.buy_item
+  list-style: none
+  padding: 5px
+  margin: 15px 0
+  border: 3px solid $color_black
+  input
+    width: 100px
+    border: 3px solid $color_black
+  label
+    background-color: rgba(gray,.200)
+  .price
+    display: inline-block
+    position: absolute
+    right: 50px
+    background-color: $color_yellow
+    &:after
+      content: " $ "
+  .del_btn
+    display: inline-block
+    position: absolute
+    right: 10px
+    cursor: pointer
+    padding: 0px 5px
+    &:hover
+      background-color: red
+      color: white
+.control_panel
+  padding: 20px
+  margin-bottom: 30px
+.addbtn
+  cursor: pointer
+  margin-left: 10px
+  padding: 5px
+  border: 3px solid $color_black
+  &:hover
+    background-color: red
+    color: white
+.total
+  background-color: $color_red
+  color: $color_white
+  .price
+    background-color: $color_red
+    
+  
+    

@@ -1,0 +1,142 @@
+// *
+//   border: solid 1px black
+// nav
+//   display: none
+// header
+//   display: none
+// section
+//   display: none
+// #section_work
+//   display: block
+
+*
+  font-family: 'Oswald','微軟正黑體'
+
+@mixin ab_center()
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%,-50%)
+
+nav 
+  position: fixed
+  top: 0
+  left: 50%
+  transform: translateX(-50%)
+  z-index: 10
+  width: 100%
+  transition: 0.5s
+  &.nattop
+      background-color: lighten(gray,40)
+      a
+        color: black
+        cursor: pointer
+  ul
+    background-color: transparent 
+    a
+      color: white
+      transition: 0.5s
+      &:hover
+        background-color: black
+        color: white
+
+  
+  
+
+.jumpbotron
+  // margin-top: -70px
+  position: relative
+  width: 100%
+  height: 500px
+  height: 100vh
+  background-image: url(http://jaspertw.com/resume/img/head.jpg)
+  background-size: cover
+  background-attachment: fixed
+  .name
+    +ab_center
+    color: transparent
+    font-size: 50px
+    -webkit-text-stroke: 2px gold
+    letter-spacing: 50px
+    z-index: 20
+    &.nattop
+      -webkit-text-stroke: 2px white
+  @media screen and (max-width: 600px)
+    .name
+      letter-spacing: 25px
+
+.cover
+  position: absolute
+  top: 0px
+  width: 100%
+  height: 500px
+  height: 100vh
+  z-index: 5
+  background-color: rgba(black,.400)
+    
+section
+  padding: 40px 0
+    
+#section_about
+  .pic
+    img
+      width: 200px
+      height: 200px
+      border-radius: 100%
+  .about
+    font-size: 20px
+    line-height: 40px
+    letter-spacing: 1px
+    color: rgba(black,.700)
+
+  @media screen and (max-width: 600px)
+    .pic
+      text-align: center
+    
+#section_work
+  background-color: #fafafa
+  .container
+  h3 
+    margin-bottom: 20px 
+  .row
+    margin-bottom: 20px
+  .work
+    height: 200px
+    overflow: hidden
+    position: relative
+    overflow: hidden
+    .cover
+      background-color: rgba(black,.500)
+      width: calc(100% - 30px)
+      height: 100%
+      position: absolute
+      transition: 0.5s
+      text-align: center
+      color: white
+      opacity: 0
+      cursor: pointer
+      .content
+        width: 80%
+        +ab_center
+      .content
+        h5
+          margin-bottom: 10px
+    img
+      width: 100%
+      height: 100%
+      transform: scale(1)
+    &:hover
+      .cover
+        opacity: 1
+        z-index: 20
+.btn.btn-primary.btn-lg
+  position: absolute
+  left: 50%
+  transform: translate(-50%,0)
+  margin: 30px 0
+  a
+    color: white
+
+.src
+    text-align: center
+

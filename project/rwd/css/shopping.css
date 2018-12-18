@@ -1,0 +1,330 @@
+/* line 5, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 14, ../scss/shopping.scss */
+#body {
+  max-width: 1000px;
+  max-height: 100%;
+  margin: 0 auto;
+  padding: 30px 0;
+  background: RGBA(239, 233, 231, 1);
+}
+/* line 20, ../scss/shopping.scss */
+#body div {
+  display: inline-block;
+  height: 100%;
+}
+/* line 25, ../scss/shopping.scss */
+#body #body_menu {
+  position: absolute;
+  width: calc(100%/8);
+  margin-left: 30px;
+}
+/* line 29, ../scss/shopping.scss */
+#body #body_menu img {
+  max-width: 10%;
+  display: inline-block;
+}
+/* line 33, ../scss/shopping.scss */
+#body #body_menu p {
+  color: RGBA(70, 28, 13, 1);
+  display: inline-block;
+}
+/* line 37, ../scss/shopping.scss */
+#body #body_menu ul {
+  padding: 10px 0;
+}
+/* line 39, ../scss/shopping.scss */
+#body #body_menu ul li {
+  cursor: pointer;
+  padding: 10px 0;
+  border-bottom: solid 1px RGBA(70, 28, 13, 1);
+}
+/* line 43, ../scss/shopping.scss */
+#body #body_menu ul li a {
+  padding-left: 5px;
+  color: RGBA(70, 28, 13, 1);
+}
+/* line 47, ../scss/shopping.scss */
+#body #body_menu ul li:hover {
+  transition: background 0.3s;
+  background: RGBA(70, 28, 13, 1);
+}
+/* line 50, ../scss/shopping.scss */
+#body #body_menu ul li:hover a {
+  transition: color 0.3s;
+  color: white;
+}
+/* line 59, ../scss/shopping.scss */
+#body #body_itmes {
+  width: calc(100%/2 * 1.4);
+  margin: 0 10px 0 280px;
+}
+/* line 62, ../scss/shopping.scss */
+#body #body_itmes #toolbar {
+  height: 50px;
+  width: 100%;
+}
+/* line 65, ../scss/shopping.scss */
+#body #body_itmes #toolbar input[type="text"] {
+  width: 400px;
+  height: 25px;
+  border: 1.5px solid RGBA(58, 13, 0, 1);
+  background: RGBA(239, 233, 231, 1);
+}
+/* line 71, ../scss/shopping.scss */
+#body #body_itmes #toolbar #search {
+  position: absolute;
+  width: 25px;
+  background: RGBA(239, 233, 231, 1);
+  cursor: pointer;
+}
+/* line 77, ../scss/shopping.scss */
+#body #body_itmes #toolbar #search:hover {
+  transition: width 0.3s;
+  width: 30px;
+}
+/* line 82, ../scss/shopping.scss */
+#body #body_itmes #toolbar p {
+  display: inline-block;
+  padding: 0 20px 0 90px;
+  border-right: 1px solid RGBA(58, 13, 0, 1);
+  cursor: pointer;
+  color: RGBA(58, 13, 0, 1);
+}
+/* line 88, ../scss/shopping.scss */
+#body #body_itmes #toolbar p:hover {
+  transition: color 0.2s;
+  color: red;
+}
+/* line 94, ../scss/shopping.scss */
+#body #body_itmes #toolbar #cart {
+  position: absolute;
+  padding-left: 10px;
+  width: 30px;
+  cursor: pointer;
+}
+/* line 99, ../scss/shopping.scss */
+#body #body_itmes #toolbar #cart:hover {
+  transition: width 0.3s;
+  width: 40px;
+}
+/* line 105, ../scss/shopping.scss */
+#body #body_itmes #items {
+  max-height: 100%;
+}
+/* line 107, ../scss/shopping.scss */
+#body #body_itmes #items .items {
+  display: inline-block;
+  width: calc(90%/3);
+  height: calc(100%);
+  margin: 10px 0 20px 10px;
+  border-right: 2px solid #D1CCCA;
+  border-bottom: 2px solid #D1CCCA;
+  box-shadow: 4px 4px 4px RGBA(221, 221, 221, 1);
+}
+/* line 115, ../scss/shopping.scss */
+#body #body_itmes #items .items .love {
+  width: 20px;
+  position: absolute;
+  margin: 3px 0 0 3px;
+  cursor: pointer;
+}
+/* line 121, ../scss/shopping.scss */
+#body #body_itmes #items .items .product {
+  max-width: 100%;
+  max-height: 100%;
+}
+/* line 125, ../scss/shopping.scss */
+#body #body_itmes #items .items p {
+  text-align: center;
+  margin-top: 10px;
+  color: RGBA(70, 28, 13, 1);
+}
+/* line 130, ../scss/shopping.scss */
+#body #body_itmes #items .items .item_title {
+  font-size: 20px;
+}
+/* line 133, ../scss/shopping.scss */
+#body #body_itmes #items .items hr {
+  width: 50%;
+  color: RGBA(70, 28, 13, 1);
+  size: 20px;
+}
+/* line 138, ../scss/shopping.scss */
+#body #body_itmes #items .items .money {
+  font-size: 18px;
+  padding: 10px 0;
+}
+/* line 142, ../scss/shopping.scss */
+#body #body_itmes #items .items .item_cart {
+  max-height: 100%;
+  margin: 10px;
+  padding: 5px 0;
+  display: block;
+  text-align: center;
+  color: RGBA(255, 94, 69, 1);
+  border: 3px solid RGBA(255, 94, 69, 1);
+  line-height: 18px;
+  cursor: pointer;
+}
+/* line 152, ../scss/shopping.scss */
+#body #body_itmes #items .items .item_cart img {
+  width: 16px;
+}
+/* line 155, ../scss/shopping.scss */
+#body #body_itmes #items .items .item_cart .item_cart_name {
+  display: inline-block;
+  margin-top: 0;
+  color: RGBA(255, 94, 69, 1);
+}
+/* line 160, ../scss/shopping.scss */
+#body #body_itmes #items .items .item_cart:hover {
+  transition: border 0.5s;
+  border: 3px solid RGBA(58, 13, 0, 1);
+}
+@media (max-width: 949px) {
+  /* line 171, ../scss/shopping.scss */
+  #body #body_menu {
+    width: calc(100%/6);
+    margin-left: 10px;
+  }
+  /* line 174, ../scss/shopping.scss */
+  #body #body_menu img {
+    display: none;
+  }
+  /* line 178, ../scss/shopping.scss */
+  #body #body_itmes {
+    margin: 0 10px 0 200px;
+  }
+  /* line 181, ../scss/shopping.scss */
+  #body #body_itmes #toolbar input[type="text"] {
+    width: 250px;
+  }
+  /* line 186, ../scss/shopping.scss */
+  #body #body_itmes #items .items {
+    width: calc(90%/2);
+  }
+}
+@media (max-width: 699px) {
+  /* line 195, ../scss/shopping.scss */
+  #body #body_menu {
+    width: 100%;
+    display: block;
+    position: relative;
+    text-align: center;
+  }
+  /* line 200, ../scss/shopping.scss */
+  #body #body_menu p {
+    font-size: 20px;
+  }
+  /* line 204, ../scss/shopping.scss */
+  #body #body_menu ul li {
+    border: none;
+    display: inline-block;
+  }
+  /* line 205, ../scss/shopping.scss */
+  #body #body_menu ul li a {
+    padding-left: 0;
+  }
+  /* line 213, ../scss/shopping.scss */
+  #body #body_itmes {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+@media (max-width: 499px) {
+  /* line 223, ../scss/shopping.scss */
+  #body #body_itmes #toolbar {
+    width: 60%;
+  }
+  /* line 224, ../scss/shopping.scss */
+  #body #body_itmes #toolbar input[type="text"] {
+    width: 90%;
+  }
+  /* line 228, ../scss/shopping.scss */
+  #body #body_itmes #toolbar p {
+    padding: 0 0 10px 0;
+    margin: 20px 0 10px 0;
+    border-right: none;
+  }
+  /* line 233, ../scss/shopping.scss */
+  #body #body_itmes #toolbar #cart {
+    position: relative;
+  }
+  /* line 238, ../scss/shopping.scss */
+  #body #body_itmes #items .items {
+    margin: 10px 0 20px 0;
+    border-left: 2px solid #D1CCCA;
+    border-top: 2px solid #D1CCCA;
+    width: calc(90%);
+  }
+  /* line 243, ../scss/shopping.scss */
+  #body #body_itmes #items .items .item_cart {
+    max-width: 50%;
+    margin: 10px auto;
+  }
+}

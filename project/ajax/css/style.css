@@ -1,0 +1,197 @@
+/* line 5, ../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 15, ../scss/style.scss */
+.wrap {
+  max-width: 1000px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+/* line 21, ../scss/style.scss */
+.head {
+  position: relative;
+  width: 100%;
+}
+/* line 24, ../scss/style.scss */
+.head img {
+  width: 1000px;
+}
+/* line 27, ../scss/style.scss */
+.head h1 {
+  width: 100%;
+  position: absolute;
+  color: white;
+  top: 90px;
+  text-align: center;
+  font-size: 30px;
+  letter-spacing: 3px;
+}
+/* line 36, ../scss/style.scss */
+.head #select {
+  position: absolute;
+  width: 40%;
+  height: 35px;
+  top: 210px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  background: RGBA(255, 255, 255, 0.7);
+  font-size: 14px;
+}
+/* line 47, ../scss/style.scss */
+.head .bar {
+  position: absolute;
+  width: 60%;
+  height: 100px;
+  bottom: -70px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  background: white;
+  border-radius: 10px;
+}
+/* line 57, ../scss/style.scss */
+.head .bar p {
+  margin: 15px 0 0 15px;
+}
+/* line 60, ../scss/style.scss */
+.head .bar ul {
+  float: left;
+}
+/* line 62, ../scss/style.scss */
+.head .bar ul li {
+  float: left;
+  margin: 20px 20px 10px 40px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* line 73, ../scss/style.scss */
+.detail {
+  width: 100%;
+  background: RGBA(247, 247, 247, 1);
+  *zoom: 1;
+}
+/* line 76, ../scss/style.scss */
+.detail .list {
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 100px;
+}
+/* line 80, ../scss/style.scss */
+.detail .list .listli {
+  position: relative;
+  width: calc(50% - 12px);
+  height: 300px;
+  float: left;
+  background: white;
+  margin: 10px 10px 10px 0;
+  border: solid 1px RGBA(225, 225, 225, 1);
+}
+/* line 88, ../scss/style.scss */
+.detail .list .listli img {
+  width: 100%;
+  height: 140px;
+  margin: 0 auto;
+}
+/* line 93, ../scss/style.scss */
+.detail .list .listli .name, .detail .list .listli .zone {
+  position: absolute;
+  top: 110px;
+  color: white;
+}
+/* line 99, ../scss/style.scss */
+.detail .list .listli .name {
+  font-size: 20px;
+  letter-spacing: 3px;
+  padding-left: 10px;
+}
+/* line 105, ../scss/style.scss */
+.detail .list .listli .zone {
+  right: 0;
+  padding-right: 10px;
+  font-size: 12px;
+}
+/* line 110, ../scss/style.scss */
+.detail .list .listli .Ticketinfo {
+  text-align: right;
+}
+/* line 4, ../scss/style.scss */
+.detail:after, .detail:before {
+  content: "";
+  display: table;
+}
+/* line 8, ../scss/style.scss */
+.detail:after {
+  clear: both;
+}
+
+/* line 119, ../scss/style.scss */
+.footer {
+  padding: 20px 0;
+  background: RGBA(100, 153, 196, 1);
+  text-align: center;
+}

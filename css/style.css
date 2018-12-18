@@ -1,0 +1,140 @@
+@charset "UTF-8";
+* {
+  font-family: 'Oswald','微軟正黑體'; }
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  z-index: 10;
+  width: 100%;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s; }
+  nav.nattop {
+    background-color: #e6e6e6; }
+    nav.nattop a {
+      color: black;
+      cursor: pointer; }
+  nav ul {
+    background-color: transparent; }
+    nav ul a {
+      color: white;
+      -webkit-transition: 0.5s;
+      -o-transition: 0.5s;
+      transition: 0.5s; }
+      nav ul a:hover {
+        background-color: black;
+        color: white; }
+
+.jumpbotron {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  height: 100vh;
+  background-image: url(http://jaspertw.com/resume/img/head.jpg);
+  background-size: cover;
+  background-attachment: fixed; }
+  .jumpbotron .name {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    color: transparent;
+    font-size: 50px;
+    -webkit-text-stroke: 2px gold;
+    letter-spacing: 50px;
+    z-index: 20; }
+    .jumpbotron .name.nattop {
+      -webkit-text-stroke: 2px white; }
+  @media screen and (max-width: 600px) {
+    .jumpbotron .name {
+      letter-spacing: 25px; } }
+
+.cover {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 500px;
+  height: 100vh;
+  z-index: 5;
+  background-color: rgba(0, 0, 0, 0.4); }
+
+section {
+  padding: 40px 0; }
+
+#section_about .pic img {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%; }
+
+#section_about .about {
+  font-size: 20px;
+  line-height: 40px;
+  letter-spacing: 1px;
+  color: rgba(0, 0, 0, 0.7); }
+
+@media screen and (max-width: 600px) {
+  #section_about .pic {
+    text-align: center; } }
+
+#section_work {
+  background-color: #fafafa; }
+  #section_work h3 {
+    margin-bottom: 20px; }
+  #section_work .row {
+    margin-bottom: 20px; }
+  #section_work .work {
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+    overflow: hidden; }
+    #section_work .work .cover {
+      background-color: rgba(0, 0, 0, 0.5);
+      width: calc(100% - 30px);
+      height: 100%;
+      position: absolute;
+      -webkit-transition: 0.5s;
+      -o-transition: 0.5s;
+      transition: 0.5s;
+      text-align: center;
+      color: white;
+      opacity: 0;
+      cursor: pointer; }
+      #section_work .work .cover .content {
+        width: 80%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%); }
+      #section_work .work .cover .content h5 {
+        margin-bottom: 10px; }
+    #section_work .work img {
+      width: 100%;
+      height: 100%;
+      -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+      transform: scale(1); }
+    #section_work .work:hover .cover {
+      opacity: 1;
+      z-index: 20; }
+
+.btn.btn-primary.btn-lg {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+  margin: 30px 0; }
+  .btn.btn-primary.btn-lg a {
+    color: white; }
+
+.src {
+  text-align: center; }
